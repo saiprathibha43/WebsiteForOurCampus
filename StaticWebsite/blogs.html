@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title>blog</title>
+  <style>
+    .card {
+      border: 2px solid #73AD21;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      width: 80%;
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #btn {
+      width: 80px;
+      height: 50px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table width="100%">
+    <tr>
+      <td width="25%"><img style="align:left;" src="aulogo.png"></td>
+      <td width="50%">
+        <center>
+          <h1 style="font-family:Sans-serif;color:#cc0000;">SAVVY+</h1>
+        </center>
+      </td>
+      <td width="25%">
+        <center>
+          <form action="home_page.html">
+            <button id="btn">go back</button>
+          </form>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <center><u>
+      <h1>BLOGS</h1>
+    </u></center>
+  <div class="con" align="center">
+    <a href="blog1.html">
+      <div class="card">
+        <h1>Your big opportunity may be right where you are now</h1>
+        <h3>Find out what you like doing best</h3>
+        <p>written by:Bharath Kumar Shedole
+        <p>
+      </div>
+    </a>
+  </div>
+  <br><br>
+  <div class="con" align="center">
+    <a href="blog2.html">
+      <div class="card">
+        <h1>My interview experience</h1>
+        <h3>ADP company</h3>
+        <p>written by:Daniel Shekar
+        <p>
+      </div>
+    </a>
+  </div>
+  <br><br>
+  <div class="con" align="center">
+    <a href="blog3.html">
+      <div class="card">
+        <h1>Stand out of the crowd</h1>
+        <h3></h3>
+        <p>written by:Aafrein Mohammad
+        <p>
+      </div>
+    </a>
+  </div>
+  <br><br>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 9000);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <style>
+    #btn {
+      width: 80px;
+      height: 50px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <table width="100%">
+    <tr>
+      <td width="25%"><img style="align:left;" src="aulogo.png"></td>
+      <td width="50%">
+        <center>
+          <h1 style="font-family:Sans-serif;color:#cc0000;">SAVVY+</h1>
+        </center>
+      </td>
+      <td width="25%">
+        <center>
+          <form action="home_page.html">
+            <button id="btn">go back</button>
+          </form>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <title>company</title>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #cfeea4;
+    }
+  </style>
+
+  <body>
+    <center><u>
+        <h1>companies</h1>
+      </u></center>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>2022</th>
+        <th>2021</th>
+        <th>2020</th>
+      </tr>
+      <tr>
+        <td>Wipro</td>
+        <td> <a href="2022wipro.html">200</a></td>
+        <td> <a href="2021wipro.html">180</a></td>
+        <td><a href="2020wipro.html">100</a></td>
+      </tr>
+      <tr>
+        <td>TCS</td>
+        <td><a href="2022tcs.html">150</a></td>
+        <td><a href="2021tcs.html">100</a></td>
+        <td><a href="2020tcs.html">80</a></td>
+      </tr>
+      <tr>
+        <td>Infosys</td>
+        <td><a href="2022info.html">150</a></td>
+        <td><a href="2021info.html">100</a></td>
+        <td><a href="2020info.html">80</a></td>
+      </tr>
+      <tr>
+        <td>JP Morgan</td>
+        <td><a href="2022jpm.html">150</a></td>
+        <td><a href="2021jpm.html">15</a></td>
+        <td><a href="2020jpm.html">8</a></td>
+      </tr>
+    </table>
+    <div align="center">
+      <div align="center" class="w3-content w3-section" style="max-width:500px">
+        <p>companies</p>
+
+        <img class="mySlides w3-animate-fading" src="TCS_wordmark_2020.png" style="width:80%">
+        <img class="mySlides w3-animate-fading" src="logo-infosys.png" style="width:80%">
+        <img class="mySlides w3-animate-fading" src="WNC_Logo_HR.jpg" style="width:80%">
+        <img class="mySlides w3-animate-fading" src="58480a96cef1014c0b5e491d.png" style="width:80%">
+      </div>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+    </script>
+  </body>
+
+</html>
